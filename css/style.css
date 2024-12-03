@@ -69,9 +69,9 @@ a:hover {
 
 h1,
 h2,
-h3 {
+h4 {
     font-family: 'Oswald', sans-serif;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 abbr[title] {
@@ -370,7 +370,7 @@ main {
 
 /* Header */
 .header--logo {
-    position: relative;
+    position: relative;                                                 
     z-index: 100;
     display: flex;
     align-items: center;
@@ -380,7 +380,10 @@ main {
     /*    background-color: #f9cc41;*/
 }
 
-
+.img_sizes {
+    max-width: 100%;
+    height:50%;
+}
 
 .info {
     display: block;
@@ -449,10 +452,12 @@ main {
     left: 0 !important;
 }
 
-.home-slider .carousel-caption h3 {
+.home-slider .carousel-caption h4 {
     color: #262533;
-    text-align: left;
-    padding: 130px 225px 0px 122px;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 20%;
     font-size: 45px;
     font-weight: 600;
     letter-spacing: 0px;
@@ -802,7 +807,7 @@ nav.menu a:hover {
     opacity: .7;
 }
 
-.about-section--title h4,
+.about-section--title h3,
 h5,
 p {
     font-family: 'Roboto', sans-serif;
@@ -1439,13 +1444,13 @@ span.block-border {
     width: 100%;
 }
 
-.project-details-sldier .carousel-caption h3,
+.project-details-sldier .carousel-caption h4,
 .project-details-sldier .carousel .icon-container,
 .project-details-sldier .carousel-caption button {
     background-color: #09c;
 }
 
-.project-details-sldier .carousel-caption h3 {
+.project-details-sldier .carousel-caption h4 {
     padding: .5em;
 }
 
@@ -1874,7 +1879,7 @@ span.block-border {
 }
 
 .social-media--video h3 {
-    font-size: 25px;
+    font-size: 20%;
     text-align: center;
     margin-bottom: 5px;
 }
@@ -2044,4 +2049,16 @@ ul {
 
 footer li {
     list-style: none;
+}
+/* Custom CSS for mobile responsiveness */
+@media (max-width: 767px) {
+    .mobile-friendly-img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* Ensuring aspect ratio is preserved */
+img {
+    width: 100%;
+    height: auto;
 }
