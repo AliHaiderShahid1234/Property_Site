@@ -2050,14 +2050,12 @@ ul {
 footer li {
     list-style: none;
 }
-/* Custom CSS for mobile responsiveness */
 @media (max-width: 767px) {
     .mobile-friendly-img {
         width: 100%;
         height: auto;
     }
 }
-/* Ensuring aspect ratio is preserved */
 img {
     width: 100%;
     height: auto;
